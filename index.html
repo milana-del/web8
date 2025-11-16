@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 8</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="obrform.css">
+</head>
+<body>
+    <header class="">
+        <div class="container">
+            <div class="row align-items-center py-3">
+                <div class="col-12">
+                    <div class="d-flex flex-column flex-md-row align-items-center">
+                        <img src="logo.png" alt="Логотип Chase Atlantic" class="logo me-md-3 mb-2 mb-md-0">
+                        <h1 class="text-white text-center text-md-start m-0">Chase Atlantic Fans</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="bg-primary">
+        <div class="container">
+            <ul class="nav nav-pills flex-column flex-md-row justify-content-center">
+                <li class="nav-item text-center"><a class="nav-link text-white " href="#home">Главная</a></li>
+                <li class="nav-item text-center"><a class="nav-link text-white " href="#gallery">Галерея</a></li>
+                <li class="nav-item text-center"><a class="nav-link text-white " href="#contact-form">Форма</a></li>
+                <li class="nav-item text-center"><a class="nav-link text-white " href="#table">Таблица</a></li>
+                <li class="nav-item text-center"><a class="nav-link text-white" href="#calculator">Калькулятор</a></li>
+                
+                <li class="nav-item text-center">
+                    <button class="nav-link text-white border-0 bg-transparent" id="open-feedback-btn">Обратная связь</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+        <div class="row  g-4">
+            <section class="col-12 order-2 order-md-1 " id="home">
+                <div class="bg-white p-3 rounded shadow-sm">
+                    <h2 class="text-purple border-purple pb-2">Добро пожаловать на фанатский сайт Chase Atlantic!</h2>
+                    <p class="mb-0">Chase Atlantic — австралийская музыкальная группа, играющая в жанрах R&B, поп и рок. Группа состоит из трёх участников: Митча Кейва, Клинта Кейва и Кристиана Энтони.</p>
+                </div>
+            </section>
+
+           <!-- Галерея -->
+<section class="col-12 order-3 gallery-section" id="gallery">
+    <div class="bg-white p-3 rounded shadow-sm">
+        <h2 class="text-purple border-purple pb-2">Галерея Chase Atlantic</h2>
+        <div class="gallery-slider">
+            <div><img src="photo1.jfif" alt="Chase Atlantic 1"></div>
+            <div><img src="photo2.jpg" alt="Chase Atlantic 2"></div>
+            <div><img src="photo3.jpg" alt="Chase Atlantic 3"></div>
+            <div><img src="photo4.jpg" alt="Chase Atlantic 4"></div>
+            <div><img src="photo5.jpg" alt="Chase Atlantic 5"></div>
+            <div><img src="photo6.jfif" alt="Chase Atlantic 6"></div>
+            <div><img src="photo7.jfif" alt="Chase Atlantic 7"></div>
+            <div><img src="photo8.jpg" alt="Chase Atlantic 8"></div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-arrow prev-arrow">&#10094;</button>
+            <div class="pager">1 / 3</div>
+            <button class="slider-arrow next-arrow">&#10095;</button>
+        </div>
+    </div>
+</section>
+
+            <section class="col-12 order-1 order-md-4" id="table">
+                <div class="bg-white p-3 rounded shadow-sm">
+                    <h2 class="text-purple border-purple pb-2">Дискография Chase Atlantic</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover text-center align-middle">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Название альбома</th>
+                                    <th>Год выпуска</th>
+                                    <th>Тип релиза</th>
+                                    <th>Количество треков</th>
+                                    <th>Примечания</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-bold">Beauty In Death</td>
+                                    <td>2021</td>
+                                    <td>Студийный альбом</td>
+                                    <td>16</td>
+                                    <td  rowspan="3"   >Альбомы получили положительные отзывы критиков</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Phases</td>
+                                    <td>2019</td>
+                                    <td>Студийный альбом</td>
+                                    <td>13</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Chase Atlantic</td>
+                                    <td>2017</td>
+                                    <td>Дебютный альбом</td>
+                                    <td>12</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Part Three (EP)</td>
+                                    <td>2018</td>
+                                    <td rowspan="3">Мини-альбом</td>
+                                    <td>6</td>
+                                    <td>Предшественник альбома "Phases"</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Nostalgia (EP)</td>
+                                    <td>2015</td>
+                                    <td>5</td>
+                                    <td>Включает трек "Friends"</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Dalliance (EP)</td>
+                                    <td>2014</td>
+                                    <td>6</td>
+                                    <td>Первый мини-альбом группы</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-12 order-4 order-md-5" id="links">
+                <div class="bg-white p-3 rounded shadow-sm">
+                    <h2 class="text-purple border-purple pb-2">Ссылки по заданию</h2>
+                    <div class="row g-2 ">
+                        <div class="mb-2 p-2"><a href="http://kubsu.ru" class="text-purple">kubsu.ru (абсолютная)</a></div>
+                        <div class="mb-2 p-2"><a href="https://kubsu.ru" class="text-purple">kubsu.ru (HTTPS)</a></div>
+                        <div class="mb-2 p-2"><a href="https://vk.com/chaseatlanticcc"><img src="linkphoto.png" alt="Ссылка-изображение" class="img-fluid"></a></div>
+                        <div class="mb-2 p-2"><a href="/about" class="text-purple">О нас</a></div>
+                        <div class="mb-2 p-2"><a href="/" class="text-purple">Главная</a></div>
+                        <div class="mb-2 p-2"><a href="#table" class="text-purple">К таблице</a></div>
+                        <div class="mb-2 p-2"><a href="https://example.com?param1=value1&param2=value2&param3=value3" class="text-purple">Ссылка с параметрами</a></div>
+                        <div class="mb-2 p-2"><a href="https://example.com/page?id=123" class="text-purple">Ссылка с id</a></div>
+                        <div class="mb-2 p-2"><a href="page.html" class="text-purple">Текущий каталог</a></div>
+                        <div class="mb-2 p-2"><a href="about/page.html" class="text-purple">Каталог about</a></div>
+                        <div class="mb-2 p-2"><a href="../page.html" class="text-purple">Уровень выше</a></div>
+                        <div class="mb-2 p-2"><a href="../../page.html" class="text-purple">Два уровня выше</a></div>
+                        <div class="mb-2 p-2"><p class="mb-0">Это <a href="https://example.com" class="text-purple">контекстная ссылка</a> в тексте абзаца.</p></div>
+                        <div class="mb-2 p-2"><a href="https://en.m.wikipedia.org/wiki/Chase_Atlantic#Career" class="text-purple">Фрагмент wikipedia</a></div>
+                        <div class="mb-2 p-2">
+                            <img class="img-fluid" src="i.jfif" alt="Карта изображения" usemap="#image-map">
+                            <map name="image-map">
+                                <area shape="rect" coords="425,0,1000,500" href="https://chaseatlantic.com/" alt="Прямоугольная область">
+                                <area shape="circle" coords="200,190,150" href="https://music.yandex.ru/artist/4832983" alt="Круглая область">
+                            </map>
+                        </div>
+                        <div class="mb-2 p-2"><a href="" class="text-purple">Пустая ссылка</a></div>
+                        <div class="mb-2 p-2"><a class="text-purple">Ссылка без href</a></div>
+                        <div class="mb-2 p-2"><a href="https://example.com" rel="nofollow" class="text-purple">NoFollow ссылка</a></div>
+                        <div class="mb-2 p-2"><a href="https://example.com" rel="noindex" class="text-purple">NoIndex ссылка</a></div>
+                        <div class="mb-2 p-2">
+                            <ul class="list-unstyled">
+                                <li><a href="https://example1.com" class="text-purple">Пример 1</a></li>
+                                <li><a href="https://example2.com" class="text-purple">Пример 2</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-2 p-2"><a href="ftp://user:password@example.com/file.txt" class="text-purple">FTP с авторизацией</a></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Калькулятор -->
+           <section class="col-12 order-5 order-md-6" id="calculator">
+                <div class="bg-white p-3 rounded shadow-sm">
+                    <h2 class="text-purple border-purple pb-2">Калькулятор стоимости заказа</h2>
+                                <form id="orderForm" class="needs-validation" novalidate>
+                                    <div class="mb-3 form-section">
+                                        <label for="productSelect" class="form-label fw-bold">Выберите товар:</label>
+                                        <select class="form-select" id="productSelect" required>
+                                            <option value="" disabled selected>-- Выберите товар --</option>
+                                                <option value="1500">Футболка Chase Atlantic - 1500 ₽</option>
+                                                <option value="2500">Кепка Chase Atlantic - 2500 ₽</option>
+                                                <option value="1000">Постер Chase Atlantic - 1000 ₽</option>
+                                                <option value="3500">Худи Chase Atlantic - 3500 ₽</option>
+                                                <option value="800">Браслет с логотипом - 800 ₽</option>
+                                                <option value="1200">Зеркальце "Beauty In Death" - 1200 ₽</option>
+                                        </select>
+                                        <div class="invalid-feedback">Пожалуйста, выберите товар</div>
+                                    </div>
+                                    <div class="mb-3 form-section">
+                                        <label for="quantityInput" class="form-label fw-bold">Количество:</label>
+                                        <input type="number" class="form-control" id="quantityInput" placeholder="Введите количество" min="1" required>
+                                        <div class="invalid-feedback">Введите целое положительное число</div>
+                                    </div>
+                                    <button type="submit" class="btn btn-dark w-100 calculator-button">Рассчитать стоимость</button>
+                                </form>
+                                <div class="mt-4">
+                                    <h3 class="h5">Стоимость заказа: <span id="totalCost" class="text-black">0</span> руб.</h3>
+                                </div>
+                    </div>
+            </section>
+
+            <section class="col-12 order-5 order-md-7" id="contact-form">
+                <div class="bg-white p-3 rounded shadow-sm">
+                    <h2 class="text-purple border-purple pb-2">Форма</h2>
+                    <form id="feedback-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-bold">Имя:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label fw-bold">Телефон:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required pattern="^\+7\d{10}$" placeholder="+79999999999">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="birthdate" class="form-label fw-bold">Дата рождения:</label>
+                            <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+                        </div>
+                        <div class="mb-3">
+                            <span class="form-label fw-bold">Пол:</span>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                                <label class="form-check-label " for="male">Мужской</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                <label class="form-check-label" for="female">Женский</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="languages" class="form-label fw-bold">Любимый язык программирования:</label>
+                            <select multiple class="form-select" id="languages" name="languages">
+                                <option value="pascal">Pascal</option>
+                                <option value="Python">Python</option>
+                                <option value="C++">C++</option>
+                                <option value="C">C</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="PHP">PHP</option>
+                                <option value="Java">Java</option>
+                                <option value="Haskel">Haskel</option>
+                                <option value="Clojure">Clojure</option>
+                                <option value="Prolog">Scala</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bio" class="form-label fw-bold">Биография:</label>
+                            <textarea class="form-control" id="bio" name="bio" required minlength="10"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agreement" name="agreement" required>
+                            <label class="form-check-label fw-bold" for="agreement">С контрактом ознакомлен(а)</label>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100">Сохранить</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-white py-4 mt-4">
+        <div class="container">
+            <p class="mb-1 text-center">&copy; 2025 Chase Atlantic Fans.</p>
+            <p class="mb-0 text-center">Фанатский сайт, не связанный с официальными представителями группы.</p>
+        </div>
+    </footer>
+
+    <script src="calculator.js"></script>
+    <script src="controlform.js"></script>
+    <script src="gallery.js"></script>
+    <script src="obrform.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Модальное окно обратной связи -->
+<div id="feedback-modal" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Обратная связь</h5>
+                <button type="button" class="btn-close" id="close-feedback-btn"></button>
+            </div>
+            <div class="modal-body">
+                <form id="feedback-form-modal">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">ФИО *</label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" class="form-control" id="femail" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Телефон *</label>
+                        <input type="tel" class="form-control" id="fphone" name="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="organization" class="form-label">Организация</label>
+                        <input type="text" class="form-control" id="organization" name="organization">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Сообщение *</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="agree" name="agree" required>
+                        <label class="form-check-label" for="agree">
+                            Согласен с политикой обработки персональных данных *
+                        </label>
+                    </div>
+                    <div id="form-message" class="alert d-none"></div>
+                    <button type="submit" class="btn btn-purple w-100">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

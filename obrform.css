@@ -1,0 +1,97 @@
+/* Стили для модального окна обратной связи */
+#feedback-modal .modal-dialog {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#feedback-modal .modal-content {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+#feedback-modal .modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+
+#feedback-modal .modal-title {
+    font-weight: 600;
+}
+
+#feedback-modal .btn-close {
+    filter: invert(1);
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 576px) {
+    #feedback-modal .modal-dialog {
+        margin: 0;
+        max-width: none;
+        height: 100vh;
+    }
+    
+    #feedback-modal .modal-content {
+        height: 100%;
+        border-radius: 0;
+    }
+    
+    #feedback-modal .modal-body {
+        padding: 1rem;
+        overflow-y: auto;
+    }
+    
+    #feedback-modal form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #feedback-modal .modal-body {
+        flex: 1;
+    }
+}
+
+/* Стили для сообщений */
+.alert-success {
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    color: #0f5132;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    color: #842029;
+}
+
+/* Анимации */
+.modal.fade .modal-dialog {
+    transform: scale(0.8);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: scale(1);
+}
+/* Стили для  кнопки */
+.btn-purple {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-purple:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-purple:active {
+    transform: translateY(0);
+}

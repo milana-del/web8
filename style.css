@@ -1,0 +1,50 @@
+/* style.css */
+/* Mobile First стили с сохранением оригинального дизайна */
+.text-purple {
+    color: #8a2be2 !important;
+}
+/* Шапка*/
+header {
+    background-color: #1a1a2e !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+}
+.border-purple {
+    border-bottom: 2px solid #8a2be2 !important;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+.bg-primary {
+    background-color: #16213e !important;
+}
+
+.nav-link:hover {
+     text-decoration: none !important;
+    background-color: #8a2be2 !important;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+
+ /* Подвал */
+footer {
+    background-color: #1a1a2e !important;
+}
+/* Медиа-запросы для планшетов */
+@media (min-width: 768px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Адаптация карты изображения */
+map area {
+    cursor: pointer;
+}
